@@ -45,21 +45,21 @@ export function PaymentSection() {
 
             <div className="mb-6">
               <span className="font-heading text-5xl font-extrabold gradient-text-bright">
-                50
+                5
               </span>
-              <span className="text-xl text-muted/40 ml-1 font-heading">%</span>
+              <span className="text-xl text-muted/40 ml-1 font-heading">Lakhs</span>
             </div>
 
             <div className="divider max-w-12 mx-auto mb-6" />
 
             <p className="mm-text-sm text-muted/50">
-              Project စတင်ချိန်မှာ
+              Project စတင်လုပ်ဆောင်ချိန်တွင်
             </p>
             <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
-              9 Lakhs
+              500,000 MMK
             </p>
             <p className="mm-text-sm text-muted/40 mt-1">
-              (၉ သိန်း)
+              (၅ သိန်းကျပ်)
             </p>
           </div>
 
@@ -78,26 +78,26 @@ export function PaymentSection() {
             </span>
 
             <h3 className="font-heading text-base font-semibold text-secondary mt-2 mb-6 mm-heading">
-              ဒုတိယ အရစ်
+              ဒုတိယ အရစ် (အပြီးသတ်)
             </h3>
 
             <div className="mb-6">
               <span className="font-heading text-5xl font-extrabold gradient-text-bright">
-                50
+                13
               </span>
-              <span className="text-xl text-muted/40 ml-1 font-heading">%</span>
+              <span className="text-xl text-muted/40 ml-1 font-heading">Lakhs</span>
             </div>
 
             <div className="divider max-w-12 mx-auto mb-6" />
 
             <p className="mm-text-sm text-muted/50">
-              Project အားလုံး Complete ဖြစ်ချိန်မှာ
+              Project လုပ်ငန်းစဉ်များ အပြည့်အဝပြီးမြောက်၍ အပ်နှံချိန်တွင်
             </p>
             <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
-              9 Lakhs
+              1,300,000 MMK
             </p>
             <p className="mm-text-sm text-muted/40 mt-1">
-              (၉ သိန်း)
+              (၁၃ သိန်းကျပ်)
             </p>
           </div>
         </div>
