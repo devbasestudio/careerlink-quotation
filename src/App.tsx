@@ -27,10 +27,10 @@ function App() {
             className="group flex items-center gap-3 justify-end"
             aria-label={item.label}
           >
-            <span className="text-[10px] tracking-[0.15em] uppercase text-muted/0 transition-all duration-300 group-hover:text-muted/60 translate-x-2 group-hover:translate-x-0">
+            <span className="text-[10px] tracking-[0.15em] uppercase text-black/0 transition-all duration-300 group-hover:text-black/60 translate-x-2 group-hover:translate-x-0">
               {item.label}
             </span>
-            <span className="w-2 h-2 rounded-full bg-white/15 transition-all duration-300 group-hover:bg-white/50 group-hover:shadow-[0_0_8px_rgba(255,255,255,0.2)]" />
+            <span className="w-2 h-2 rounded-full bg-black/15 transition-all duration-300 group-hover:bg-black/50 group-hover:shadow-[0_0_8px_rgba(0,0,0,0.1)]" />
           </a>
         ))}
       </nav>

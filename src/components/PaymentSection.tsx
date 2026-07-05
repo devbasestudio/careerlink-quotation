@@ -20,8 +20,8 @@ export function PaymentSection() {
         >
           {/* Arrow connector */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block">
-            <div className="w-10 h-10 rounded-full bg-primary border border-white/[0.06] flex items-center justify-center">
-              <ArrowRight className="w-4 h-4 text-white/30" />
+            <div className="w-10 h-10 rounded-full bg-primary border border-black/[0.08] flex items-center justify-center">
+              <ArrowRight className="w-4 h-4 text-neutral-400" />
             </div>
           </div>
 
@@ -32,7 +32,7 @@ export function PaymentSection() {
             }`}
           >
             <div className="icon-container icon-container-lg mx-auto mb-6">
-              <CircleDollarSign className="w-6 h-6 text-white/40" />
+              <CircleDollarSign className="w-6 h-6 text-neutral-500" />
             </div>
 
             <span className="text-[10px] tracking-[0.25em] uppercase text-muted/40 font-medium">
@@ -70,7 +70,7 @@ export function PaymentSection() {
             }`}
           >
             <div className="icon-container icon-container-lg mx-auto mb-6">
-              <CircleDollarSign className="w-6 h-6 text-white/40" />
+              <CircleDollarSign className="w-6 h-6 text-neutral-500" />
             </div>
 
             <span className="text-[10px] tracking-[0.25em] uppercase text-muted/40 font-medium">

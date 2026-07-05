@@ -8,7 +8,7 @@ export function MaintenanceSection() {
   return (
     <section id="maintenance" className="py-24 md:py-32 px-6 relative section-pattern">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/[0.05] to-transparent" />
       </div>
 
       <div className="max-w-4xl mx-auto relative">
@@ -27,7 +27,7 @@ export function MaintenanceSection() {
           >
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               <div className="icon-container icon-container-lg flex-shrink-0">
-                <ShieldCheck className="w-6 h-6 text-white/40" />
+                <ShieldCheck className="w-6 h-6 text-neutral-500" />
               </div>
 
               <div className="flex-1">
@@ -53,10 +53,10 @@ export function MaintenanceSection() {
                 return (
                   <div
                     key={item.title}
-                    className="bg-white/[0.02] rounded-xl p-5 text-center border border-white/[0.04] transition-all duration-400 hover:bg-white/[0.04] hover:border-white/[0.08] group"
+                    className="bg-black/[0.015] rounded-xl p-5 text-center border border-black/[0.04] transition-all duration-400 hover:bg-black/[0.03] hover:border-black/[0.08] group"
                   >
                     <div className="icon-container mx-auto mb-3">
-                      <Icon className="w-4.5 h-4.5 text-white/30 transition-colors duration-300 group-hover:text-white/60" />
+                      <Icon className="w-4.5 h-4.5 text-neutral-400 transition-colors duration-300 group-hover:text-secondary" />
                     </div>
                     <h4 className="font-heading text-sm font-semibold text-secondary/70 tracking-tight">
                       {item.title}
@@ -79,7 +79,7 @@ export function MaintenanceSection() {
           >
             <div className="flex flex-col md:flex-row md:items-start gap-6">
               <div className="icon-container icon-container-lg flex-shrink-0">
-                <Wrench className="w-6 h-6 text-white/40" />
+                <Wrench className="w-6 h-6 text-neutral-500" />
               </div>
 
               <div className="flex-1">

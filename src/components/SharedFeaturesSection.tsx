@@ -21,37 +21,37 @@ const sharedFeatures: SharedFeature[] = [
     Icon: ShieldCheck,
     title: 'Full Security',
     description:
-      'Authentication, Authorization, Data Encryption နဲ့ Security Best Practices တွေ အပြည့်အဝ ထည့်သွင်းပေးထားပါတယ်',
+      'စနစ်တကျရှိသော အကောင့်ဝင်ရောက်မှု၊ အချက်အလက်များအား ကုဒ်ပြောင်းဝှက်၍ သိမ်းဆည်းခြင်း (Data Encryption) နှင့် လုံခြုံရေးဆိုင်ရာ အကာအကွယ်များ အပြည့်အဝ ပါဝင်ပါသည်။',
   },
   {
     Icon: Zap,
     title: 'High Performance',
     description:
-      'Optimized Loading, Caching Strategy, Image Optimization နဲ့ Code Splitting ဖြင့် မြန်ဆန်စွာ Run ပါတယ်',
+      'စာမျက်နှာများ အမြန်ဆုံး ဖွင့်နိုင်ရန် ပြင်ဆင်ခြင်း၊ Caching စနစ်များ ထည့်သွင်းခြင်းနှင့် ပုံရိပ်များအား အရည်အသွေးမကျဘဲ ချုံ့ပေးခြင်းတို့ဖြင့် သွက်လက်မြန်ဆန်စွာ အသုံးပြုနိုင်ပါသည်။',
   },
   {
     Icon: Smartphone,
     title: 'Responsive Design',
     description:
-      'Phone, Tablet, Desktop အားလုံးမှာ ကောင်းမွန်စွာ Display ဖြစ်ဖို့ Responsive Design နဲ့ တည်ဆောက်ထားပါတယ်',
+      'မည်သည့် မျက်နှာပြင်အရွယ်အစားရှိသော Phone၊ Tablet နှင့် ကွန်ပျူတာများပေါ်တွင်မဆို သပ်ရပ်လှပစွာ အလိုအလျောက် ပြသပေးနိုင်ပါသည်။',
   },
   {
     Icon: Database,
     title: 'Supabase Database',
     description:
-      'Supabase Database ကို Setup လုပ်ပေးပြီး Data Management အတွက် Backend ပြည့်စုံစွာ စီစဉ်ပေးပါတယ်',
+      'လုံခြုံစိတ်ချရပြီး သွက်လက်သည့် Supabase Database စနစ်ကို စနစ်တကျ အသုံးပြု၍ သုံးစွဲသူ ဒေတာအချက်အလက်များကို ထိန်းသိမ်းပေးပါမည်။',
   },
   {
     Icon: Globe,
     title: 'Domain & SSL Setup',
     description:
-      'Custom Domain Setup လုပ်ပေးပြီး SSL Certificate ဖြင့် Secure Connection ရရှိစေပါတယ်',
+      'လုပ်ငန်းသုံး သီးသန့် Domain ချိတ်ဆက်ပေးပြီး HTTPS (SSL Secure Connection) ဖြင့် လုံခြုံရေး စိတ်ချရအောင် လုပ်ဆောင်ပေးပါမည်။',
   },
   {
     Icon: Rocket,
     title: 'Production-Ready',
     description:
-      'Data ထည့်ပြီးတဲ့အထိ အသုံးပြုလို့ရတဲ့ Production-Ready State အထိ Support ပေးပါမယ်',
+      'အချက်အလက်များနှင့် ဗီဒီယိုများ အားလုံး ထည့်သွင်းပြီးသည်နှင့် ချက်ချင်း အဆင်သင့် အသုံးပြုနိုင်သည့် အခြေအနေအထိ ပံ့ပိုးပေးသွားပါမည်။',
   },
 ];
 
@@ -61,15 +61,15 @@ export function SharedFeaturesSection() {
   return (
     <section id="shared-features" className="py-24 md:py-32 px-6 relative section-pattern">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/[0.05] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-black/[0.05] to-transparent" />
       </div>
 
       <div className="max-w-5xl mx-auto relative">
         <SectionHeader
           label="Included in All"
           title="Website သုံးခုလုံးအတွက်"
-          subtitle="Website တိုင်းကို အောက်ပါ Quality Standards တွေနဲ့ တည်ဆောက်ပေးပါမယ်"
+          subtitle="Website (၃) ခုစလုံးအတွက် အောက်ပါ အရည်အသွေးမြင့် စံချိန်စံညွှန်းများအတိုင်း တာဝန်ယူ တည်ဆောက်ပေးသွားမည် ဖြစ်သည်။"
         />
 
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -83,8 +83,8 @@ export function SharedFeaturesSection() {
                 }`}
                 style={{ animationDelay: `${index * 80}ms` }}
               >
-                <div className="icon-container mb-5 group-hover:bg-white/[0.06]">
-                  <Icon className="w-5 h-5 text-white/40 transition-colors duration-400 group-hover:text-white/70" />
+                <div className="icon-container mb-5 group-hover:bg-black/[0.03]">
+                  <Icon className="w-5 h-5 text-neutral-400 transition-colors duration-400 group-hover:text-secondary" />
                 </div>
                 <h3 className="font-heading text-base font-semibold text-secondary mb-2.5 tracking-tight">
                   {feature.title}

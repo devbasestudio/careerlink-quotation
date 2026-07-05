@@ -42,14 +42,14 @@ const websites: WebsiteData[] = [
     title: 'Main Landing Page',
     subtitle: 'Business Introduction Website',
     description:
-      'လုပ်ငန်းရဲ့ အကြောင်းအရာ၊ Course Catalog၊ Blog System နဲ့ Admin Control Panel ပါဝင်တဲ့ ပြည့်စုံတဲ့ Landing Page ဖြစ်ပါတယ်။',
+      'လုပ်ငန်း၏ အချက်အလက်များ၊ သင်တန်း (Course Showcase) များနှင့် ဆောင်းပါး (Blog Articles) များကို စနစ်တကျ ပြသပေးနိုင်ပြီး Admin Panel မှတစ်ဆင့် လွယ်ကူစွာ စီမံခန့်ခွဲနိုင်မည့် မိတ်ဆက်စာမျက်နှာ ဖြစ်ပါသည်။',
     features: [
-      { icon: Layout, text: 'Business Introduction Page' },
-      { icon: BookOpen, text: 'Course Catalog Display' },
-      { icon: PenTool, text: 'Blog Writing & Publishing' },
-      { icon: Shield, text: 'Admin Control Panel' },
-      { icon: Search, text: 'SEO Optimized' },
-      { icon: Smartphone, text: 'Mobile Responsive Design' },
+      { icon: Layout, text: 'လုပ်ငန်းမိတ်ဆက်စာမျက်နှာ (About & Overview)' },
+      { icon: BookOpen, text: 'သင်တန်းများ ပြသခြင်း (Courses Showcase)' },
+      { icon: PenTool, text: 'ဆောင်းပါးများ ရေးသားတင်ခြင်း (Blog & Articles)' },
+      { icon: Shield, text: 'အုပ်ချုပ်သူအဖွဲ့ဝင် စီမံခန့်ခွဲရေးစနစ် (Admin Control Panel)' },
+      { icon: Search, text: 'ရှာဖွေမှုစနစ် အကောင်းဆုံးဖြစ်အောင် ပြင်ဆင်ခြင်း (SEO Optimization)' },
+      { icon: Smartphone, text: 'ဖုန်းနှင့် Tablet များတွင် သပ်ရပ်စွာပြသခြင်း (Responsive Layout)' },
     ],
     Icon: Globe,
   },
@@ -58,14 +58,14 @@ const websites: WebsiteData[] = [
     title: 'BJT Learning Platform',
     subtitle: 'Japanese Language Learning Platform',
     description:
-      'BJT (Business Japanese Test) အတွက် ရည်ရွယ်ထားတဲ့ ပြည့်စုံတဲ့ Learning Platform ဖြစ်ပြီး 12-Week Study Plan၊ Video Lessons နဲ့ Quiz System တွေ ပါဝင်ပါတယ်။',
+      'BJT (Business Japanese Test) စာမေးပွဲအတွက် အဆင့်သင့်လေ့လာနိုင်သော Platform တစ်ခုဖြစ်ပြီး ၁၂ ပတ်စာ သင်ခန်းစာဇယား (Study Plan)၊ ဗီဒီယိုသင်ခန်းစာများနှင့် စမ်းသပ်စစ်ဆေးမှုများ (Quiz & Exam) ပါဝင်ပါသည်။',
     features: [
-      { icon: BookOpen, text: '12-Week Study Plan' },
-      { icon: Video, text: 'Video Lessons Upload' },
-      { icon: Brain, text: 'Vocabulary Learning System' },
-      { icon: HelpCircle, text: 'Quiz System' },
-      { icon: ClipboardCheck, text: 'Exam System' },
-      { icon: BarChart3, text: 'Progress Tracking' },
+      { icon: BookOpen, text: '၁၂ ပတ်စာ သင်ခန်းစာဇယား (12-Week Study Plan)' },
+      { icon: Video, text: 'သင်ကြားရေးဗီဒီယိုများ တင်ခြင်း (Video Lessons Upload)' },
+      { icon: Brain, text: 'ဝေါဟာရများ လေ့လာဆန်းစစ်ခြင်းစနစ် (Vocab System)' },
+      { icon: HelpCircle, text: 'ဉာဏ်စမ်းစနစ် (Quiz System)' },
+      { icon: ClipboardCheck, text: 'စာမေးပွဲစစ်ဆေးခြင်းစနစ် (Exam System)' },
+      { icon: BarChart3, text: 'လေ့လာမှုတိုးတက်မှု ခြေရာခံခြင်းစနစ် (Progress Tracking)' },
     ],
     Icon: BookOpen,
   },
@@ -74,14 +74,14 @@ const websites: WebsiteData[] = [
     title: 'JLPT N2 Platform',
     subtitle: 'JLPT N2 Level Learning Platform',
     description:
-      'JLPT N2 Level အတွက် ရည်ရွယ်ထားတဲ့ Learning Platform ဖြစ်ပြီး BJT Platform ရဲ့ Feature အားလုံးအပြင် Authentication၊ Payment Integration နဲ့ Messenger Integration တွေ ထပ်မံပါဝင်ပါတယ်။',
+      'JLPT N2 level အတွက် သီးသန့်တည်ဆောက်ထားသော Learning Platform ဖြစ်ပြီး BJT ၏ စနစ်များအပြင် Google Login၊ Device ကန့်သတ်ချက်စနစ်၊ Payment စနစ်များနှင့် Messenger Integration များ ပါဝင်ပါသည်။',
     features: [
-      { icon: BookOpen, text: 'BJT Platform ရဲ့ Feature အားလုံး' },
-      { icon: LogIn, text: 'Google Login Authentication' },
-      { icon: MonitorSmartphone, text: 'Device Limit Control' },
-      { icon: MessageCircle, text: 'Messenger Link Integration' },
-      { icon: CreditCard, text: 'Website Payment System' },
-      { icon: Send, text: 'Messenger Payment Redirect' },
+      { icon: BookOpen, text: 'BJT Platform ရှိ စနစ်များအားလုံး ပါဝင်ခြင်း' },
+      { icon: LogIn, text: 'လုံခြုံစိတ်ချရသော Google ဖြင့် ဝင်ရောက်ခြင်းစနစ် (Google Login)' },
+      { icon: MonitorSmartphone, text: 'အကောင့်တစ်ခုတွင် စက်ပစ္စည်းသုံးစွဲမှု ကန့်သတ်ခြင်းစနစ် (Device Limit)' },
+      { icon: MessageCircle, text: 'စာမျက်နှာ Messenger သို့ တိုက်ရိုက်ချိတ်ဆက်ခြင်း (Messenger Link)' },
+      { icon: CreditCard, text: 'ဝဘ်ဆိုက်အတွင်း ငွေပေးချေမှုစနစ် (Website Payment System)' },
+      { icon: Send, text: 'Messenger မှတစ်ဆင့် ငွေပေးချေရန် ခေါ်ယူခြင်း (Messenger Payment)' },
     ],
     Icon: Target,
   },
@@ -103,11 +103,11 @@ function WebsiteCard({ website, index }: { website: WebsiteData; index: number }
       {/* Header */}
       <div className="flex items-start gap-5 mb-8">
         <div className="icon-container icon-container-lg">
-          <Icon className="w-6 h-6 text-white/50" />
+          <Icon className="w-6 h-6 text-neutral-500" />
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-[10px] tracking-[0.25em] uppercase text-muted/50 font-medium bg-white/[0.03] px-3 py-1 rounded-full border border-white/[0.04]">
+            <span className="text-[10px] tracking-[0.25em] uppercase text-muted/50 font-medium bg-black/[0.03] px-3 py-1 rounded-full border border-black/[0.04]">
               Website {website.id}
             </span>
           </div>
@@ -136,7 +136,7 @@ function WebsiteCard({ website, index }: { website: WebsiteData; index: number }
                 key={feature.text}
                 className="flex items-start gap-3 group"
               >
-                <FeatureIcon className="w-4 h-4 text-white/20 mt-0.5 flex-shrink-0 transition-colors duration-300 group-hover:text-white/50" />
+                <FeatureIcon className="w-4 h-4 text-neutral-400 mt-0.5 flex-shrink-0 transition-colors duration-300 group-hover:text-secondary" />
                 <span className="mm-text-sm text-secondary/60 transition-colors duration-300 group-hover:text-secondary/90">
                   {feature.text}
                 </span>
@@ -156,7 +156,7 @@ export function FeaturesSection() {
         <SectionHeader
           label="Features"
           title="ပါဝင်မည့် Websites"
-          subtitle="Website သုံးခုလုံးကို Security အပြည့်၊ Performance အမြင့်ဆုံးနဲ့ Production-Ready ဖြစ်တဲ့အထိ တည်ဆောက်ပေးပါမယ်"
+          subtitle="လုပ်ငန်းသုံး Website တစ်ခုချင်းစီအလိုက် လိုအပ်သော စနစ်များအားလုံးကို အကောင်းမွန်ဆုံးနှင့် စနစ်တကျ ထည့်သွင်းပုံဖော်ပေးသွားမည် ဖြစ်သည်။"
         />
 
         <div className="space-y-6">

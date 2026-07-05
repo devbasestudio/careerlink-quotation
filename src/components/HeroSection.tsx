@@ -12,8 +12,8 @@ export function HeroSection() {
     >
       {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-white/[0.015] rounded-full blur-[100px] animate-float" />
-        <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-white/[0.01] rounded-full blur-[80px] animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-black/[0.015] rounded-full blur-[100px] animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-black/[0.01] rounded-full blur-[80px] animate-float" style={{ animationDelay: '3s' }} />
       </div>
 
       {/* Grid pattern */}
@@ -21,7 +21,7 @@ export function HeroSection() {
         className="absolute inset-0 pointer-events-none opacity-[0.025]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)',
+            'linear-gradient(rgba(0,0,0,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.15) 1px, transparent 1px)',
           backgroundSize: '80px 80px',
         }}
       />
@@ -33,7 +33,7 @@ export function HeroSection() {
             isVisible ? 'animate-fade-in-up' : 'opacity-0'
           }`}
         >
-          <Sparkles className="w-3.5 h-3.5 text-white/40" />
+          <Sparkles className="w-3.5 h-3.5 text-neutral-400" />
           <span className="text-[11px] tracking-[0.25em] uppercase text-muted font-medium">
             Project Quotation
           </span>
@@ -48,7 +48,7 @@ export function HeroSection() {
         >
           <span className="gradient-text-bright">Website</span>
           <br />
-          <span className="text-secondary/50 mm-heading text-4xl md:text-5xl lg:text-6xl">တည်ဆောက်ခြင်း</span>
+          <span className="text-secondary/60 mm-heading text-4xl md:text-5xl lg:text-6xl">ဖွံ့ဖြိုးတိုးတက်ရေး အဆိုပြုလွှာ</span>
         </h1>
 
         {/* Description */}
@@ -58,9 +58,9 @@ export function HeroSection() {
           }`}
           style={{ animationDelay: '200ms' }}
         >
-          Security အပြည့်အဝ၊ Performance အမြင့်ဆုံးနဲ့ Production-Ready ဖြစ်တဲ့
+          လုံခြုံစိတ်ချရမှု (Security)၊ မြန်ဆန်သွက်လက်မှု (Performance) အပြည့်အဝဖြင့် စနစ်တကျ အသုံးပြုနိုင်မည့်
           <br className="hidden md:block" />
-          Website <span className="text-secondary font-medium">သုံးခု</span>ကို Professional စံနှုန်းနဲ့ တည်ဆောက်ပေးပါမယ်
+          Custom Website <span className="text-secondary font-medium">(၃) ခုအား</span> Professional စံချိန်စံညွှန်းများနှင့်အညီ တည်ဆောက်ပေးသွားမည် ဖြစ်ပါသည်။
         </p>
 
         {/* CTA buttons */}
@@ -72,18 +72,18 @@ export function HeroSection() {
         >
           <a
             href="#pricing"
-            className="group px-8 py-3.5 bg-secondary text-primary font-semibold rounded-full text-sm tracking-wide transition-all duration-400 hover:bg-white/90 hover:shadow-[0_0_40px_rgba(255,255,255,0.12)]"
+            className="group px-8 py-3.5 bg-secondary text-primary font-semibold rounded-full text-sm tracking-wide transition-all duration-400 hover:bg-neutral-800 hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
           >
-            <span className="mm-heading">ကုန်ကျစရိတ် ကြည့်ရန်</span>
+            <span className="mm-heading">ကုန်ကျစရိတ်နှင့် ဝန်ဆောင်မှုများ</span>
             <span className="inline-block ml-2 transition-transform duration-300 group-hover:translate-x-1">
               →
             </span>
           </a>
           <a
             href="#features"
-            className="px-8 py-3.5 glass rounded-full text-sm tracking-wide font-medium transition-all duration-400 hover:bg-white/[0.05] text-muted hover:text-secondary"
+            className="px-8 py-3.5 glass rounded-full text-sm tracking-wide font-medium transition-all duration-400 hover:bg-black/[0.03] text-muted hover:text-secondary"
           >
-            <span className="mm-heading">Features များ ကြည့်ရန်</span>
+            <span className="mm-heading">ပါဝင်မည့် စနစ်များကို ကြည့်ရန်</span>
           </a>
         </div>
 

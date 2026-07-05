@@ -6,14 +6,14 @@ export function PricingSection() {
   const [ref, isVisible] = useScrollReveal<HTMLDivElement>();
 
   const includedItems = [
-    'Website (3) ခု Development',
-    'Domain Setup & Configuration',
-    'Supabase Database Setup',
-    'SSL Certificate Setup',
-    'Sample Data ထည့်ပေးခြင်း',
-    'Real Data ထည့်ပေးခြင်း',
-    'Maintenance 1 Month အခမဲ့',
-    'Security & Bug Fixes',
+    'Website (၃) ခုလုံးအတွက် ရေးဆွဲတည်ဆောက်ပေးခြင်း',
+    'လုပ်ငန်းသုံး Domain ချိတ်ဆက်မှုစနစ်များ စီစဉ်ပေးခြင်း',
+    'Supabase Database & Backend စနစ် ပြင်ဆင်ပေးခြင်း',
+    'HTTPS လုံခြုံရေးစနစ် (SSL Certificate) ပြင်ဆင်ပေးခြင်း',
+    'စမ်းသပ်အသုံးပြုရန် လိုအပ်မည့် Sample Data များ စတင်ထည့်သွင်းပေးခြင်း',
+    'Client ဆီမှ ဒေတာအစစ်အမှန်များအား အပြီးသတ်ထည့်သွင်းပေးခြင်း',
+    'အပြီးသတ်လွှဲပြောင်းပြီးနောက် ၁ လ အခမဲ့ ထိန်းသိမ်းစောင့်ရှောက်ပေးခြင်း',
+    'လုံခြုံရေးဆိုင်ရာ စောင့်ကြည့်ခြင်းနှင့် ပြဿနာများ အခမဲ့ပြင်ဆင်ပေးခြင်း',
   ];
 
   return (
@@ -22,7 +22,7 @@ export function PricingSection() {
         <SectionHeader
           label="Investment"
           title="Project ကုန်ကျစရိတ်"
-          subtitle="Website သုံးခုလုံးအတွက် စုစုပေါင်း ကုန်ကျစရိတ်"
+          subtitle="Website (၃) ခုစလုံးအတွက် အပြီးအစီး ကုန်ကျစရိတ်"
         />
 
         <div
@@ -34,17 +34,17 @@ export function PricingSection() {
             {['top-0 left-0', 'top-0 right-0', 'bottom-0 left-0', 'bottom-0 right-0'].map((pos) => (
               <div key={pos} className={`absolute ${pos} w-20 h-20`}>
                 <div
-                  className={`absolute ${pos.includes('top') ? 'top-0' : 'bottom-0'} ${pos.includes('left') ? 'left-0' : 'right-0'} w-full h-px bg-gradient-to-${pos.includes('left') ? 'r' : 'l'} from-white/15 to-transparent`}
+                  className={`absolute ${pos.includes('top') ? 'top-0' : 'bottom-0'} ${pos.includes('left') ? 'left-0' : 'right-0'} w-full h-px bg-gradient-to-${pos.includes('left') ? 'r' : 'l'} from-black/10 to-transparent`}
                 />
                 <div
-                  className={`absolute ${pos.includes('top') ? 'top-0' : 'bottom-0'} ${pos.includes('left') ? 'left-0' : 'right-0'} w-px h-full bg-gradient-to-${pos.includes('top') ? 'b' : 't'} from-white/15 to-transparent`}
+                  className={`absolute ${pos.includes('top') ? 'top-0' : 'bottom-0'} ${pos.includes('left') ? 'left-0' : 'right-0'} w-px h-full bg-gradient-to-${pos.includes('top') ? 'b' : 't'} from-black/10 to-transparent`}
                 />
               </div>
             ))}
 
             {/* Icon */}
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/[0.04] border border-white/[0.06] mb-8">
-              <Gem className="w-6 h-6 text-white/40" />
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-black/[0.03] border border-black/[0.06] mb-8">
+              <Gem className="w-6 h-6 text-neutral-500" />
             </div>
 
             <span className="text-[11px] tracking-[0.3em] uppercase text-muted/50 font-medium block mb-4">
@@ -69,8 +69,8 @@ export function PricingSection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto text-left">
               {includedItems.map((item) => (
                 <div key={item} className="flex items-start gap-3 group">
-                  <div className="w-5 h-5 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center flex-shrink-0 mt-0.5 transition-all duration-300 group-hover:bg-white/[0.08] group-hover:border-white/[0.15]">
-                    <Check className="w-3 h-3 text-white/40 transition-colors duration-300 group-hover:text-white/70" />
+                  <div className="w-5 h-5 rounded-full bg-black/[0.03] border border-black/[0.08] flex items-center justify-center flex-shrink-0 mt-0.5 transition-all duration-300 group-hover:bg-black/[0.06] group-hover:border-black/[0.12]">
+                    <Check className="w-3 h-3 text-neutral-400 transition-colors duration-300 group-hover:text-secondary" />
                   </div>
                   <span className="mm-text-sm text-secondary/50 transition-colors duration-300 group-hover:text-secondary/80">
                     {item}

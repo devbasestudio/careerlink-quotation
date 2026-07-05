@@ -72,7 +72,7 @@ export function TimelineSection() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gradient-to-b from-white/8 via-white/4 to-transparent hidden md:block" />
+          <div className="absolute left-[22px] top-0 bottom-0 w-px bg-gradient-to-b from-black/10 via-black/5 to-transparent hidden md:block" />
 
           <div className="space-y-6">
             {timelineSteps.map((step, index) => (
@@ -120,14 +120,14 @@ function TimelineCard({
             </div>
             <div className="flex items-center gap-3">
               <div className="icon-container md:block hidden">
-                <Icon className="w-5 h-5 text-white/40 transition-colors duration-300 group-hover:text-white/60" />
+                <Icon className="w-5 h-5 text-neutral-400 transition-colors duration-300 group-hover:text-secondary" />
               </div>
               <h3 className="font-heading text-lg md:text-xl font-bold text-secondary tracking-tight">
                 {step.title}
               </h3>
             </div>
           </div>
-          <span className="text-[10px] tracking-[0.2em] uppercase text-muted/50 bg-white/[0.03] px-4 py-2 rounded-full font-medium whitespace-nowrap border border-white/[0.04]">
+          <span className="text-[10px] tracking-[0.2em] uppercase text-muted/50 bg-black/[0.02] px-4 py-2 rounded-full font-medium whitespace-nowrap border border-black/[0.05]">
             {step.duration}
           </span>
         </div>
