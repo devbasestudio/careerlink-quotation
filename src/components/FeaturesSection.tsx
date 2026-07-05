@@ -19,6 +19,10 @@ import {
   MessageCircle,
   CreditCard,
   Send,
+  GraduationCap,
+  FileText,
+  Clock,
+  Award,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -66,6 +70,11 @@ const websites: WebsiteData[] = [
       { icon: HelpCircle, text: 'ဉာဏ်စမ်းစနစ် (Quiz System)' },
       { icon: ClipboardCheck, text: 'စာမေးပွဲစစ်ဆေးခြင်းစနစ် (Exam System)' },
       { icon: BarChart3, text: 'လေ့လာမှုတိုးတက်မှု ခြေရာခံခြင်းစနစ် (Progress Tracking)' },
+      { icon: LogIn, text: 'လုံခြုံစိတ်ချရသော Google ဖြင့် ဝင်ရောက်ခြင်းစနစ် (Google Login)' },
+      { icon: MonitorSmartphone, text: 'အကောင့်တစ်ခုတွင် စက်ပစ္စည်းသုံးစွဲမှု ကန့်သတ်ခြင်းစနစ် (Device Limit)' },
+      { icon: MessageCircle, text: 'စာမျက်နှာ Messenger သို့ တိုက်ရိုက်ချိတ်ဆက်ခြင်း (Messenger Link)' },
+      { icon: CreditCard, text: 'ဝဘ်ဆိုက်အတွင်း ငွေပေးချေမှုစနစ် (Website Payment System)' },
+      { icon: Send, text: 'Messenger မှတစ်ဆင့် ငွေပေးချေရန် ခေါ်ယူခြင်း (Messenger Payment)' },
     ],
     Icon: BookOpen,
   },
@@ -74,9 +83,14 @@ const websites: WebsiteData[] = [
     title: 'JLPT N2 Platform',
     subtitle: 'JLPT N2 Level Learning Platform',
     description:
-      'JLPT N2 level အတွက် သီးသန့်တည်ဆောက်ထားသော Learning Platform ဖြစ်ပြီး BJT ၏ စနစ်များအပြင် Google Login၊ Device ကန့်သတ်ချက်စနစ်၊ Payment စနစ်များနှင့် Messenger Integration များ ပါဝင်ပါသည်။',
+      'JLPT N2 level အတွက် သီးသန့်တည်ဆောက်ထားသော Learning Platform ဖြစ်ပြီး BJT ၏ စနစ်များအတိုင်း Google Login၊ Device ကန့်သတ်ချက်စနစ်၊ Payment စနစ်များနှင့် Messenger Integration များ ပါဝင်ပါသည်။',
     features: [
-      { icon: BookOpen, text: 'BJT Platform ရှိ စနစ်များအားလုံး ပါဝင်ခြင်း' },
+      { icon: BookOpen, text: 'N2 သင်ခန်းစာဇယားနှင့် စနစ်များ (N2 Study System)' },
+      { icon: Video, text: 'သင်ကြားရေးဗီဒီယိုများ တင်ခြင်း (Video Lessons Upload)' },
+      { icon: Brain, text: 'ဝေါဟာရများ လေ့လာဆန်းစစ်ခြင်းစနစ် (Vocab System)' },
+      { icon: HelpCircle, text: 'ဉာဏ်စမ်းစနစ် (Quiz System)' },
+      { icon: ClipboardCheck, text: 'စာမေးပွဲစစ်ဆေးခြင်းစနစ် (Exam System)' },
+      { icon: BarChart3, text: 'လေ့လာမှုတိုးတက်မှု ခြေရာခံခြင်းစနစ် (Progress Tracking)' },
       { icon: LogIn, text: 'လုံခြုံစိတ်ချရသော Google ဖြင့် ဝင်ရောက်ခြင်းစနစ် (Google Login)' },
       { icon: MonitorSmartphone, text: 'အကောင့်တစ်ခုတွင် စက်ပစ္စည်းသုံးစွဲမှု ကန့်သတ်ခြင်းစနစ် (Device Limit)' },
       { icon: MessageCircle, text: 'စာမျက်နှာ Messenger သို့ တိုက်ရိုက်ချိတ်ဆက်ခြင်း (Messenger Link)' },
@@ -84,6 +98,26 @@ const websites: WebsiteData[] = [
       { icon: Send, text: 'Messenger မှတစ်ဆင့် ငွေပေးချေရန် ခေါ်ယူခြင်း (Messenger Payment)' },
     ],
     Icon: Target,
+  },
+  {
+    id: 4,
+    title: 'Exam Practice Platform',
+    subtitle: 'Mock Test & Practice Platform',
+    description:
+      'စာမေးပွဲပုံစံတူ လေ့ကျင့်ခန်းများ၊ စာမေးပွဲအချိန်မှတ်စနစ်များနှင့် အဖြေလွှာရှင်းလင်းချက်များ ပါဝင်ပြီး မိမိအရည်အချင်းကို စစ်ဆေးဆန်းစစ်နိုင်မည့် လေ့ကျင့်ရေးစနစ် ဖြစ်ပါသည်။',
+    features: [
+      { icon: FileText, text: 'စာမေးပွဲပုံစံတူ လေ့ကျင့်ခန်းများ (Mock Exam Practice)' },
+      { icon: Brain, text: 'မေးခွန်းဟောင်းများနှင့် မေးခွန်းဘဏ်စနစ် (Question Bank)' },
+      { icon: ClipboardCheck, text: 'အပိုင်းအလိုက် စမ်းသပ်စစ်ဆေးခြင်း (Section-wise Practice)' },
+      { icon: Award, text: 'အဖြေလွှာနှင့် ရှင်းလင်းချက်များ (Detailed Explanations)' },
+      { icon: Clock, text: 'စာမေးပွဲအချိန်မှတ်စနစ် (Exam Timer System)' },
+      { icon: LogIn, text: 'လုံခြုံစိတ်ချရသော Google ဖြင့် ဝင်ရောက်ခြင်းစနစ် (Google Login)' },
+      { icon: MonitorSmartphone, text: 'အကောင့်တစ်ခုတွင် စက်ပစ္စည်းသုံးစွဲမှု ကန့်သတ်ခြင်းစနစ် (Device Limit)' },
+      { icon: MessageCircle, text: 'စာမျက်နှာ Messenger သို့ တိုက်ရိုက်ချိတ်ဆက်ခြင်း (Messenger Link)' },
+      { icon: CreditCard, text: 'ဝဘ်ဆိုက်အတွင်း ငွေပေးချေမှုစနစ် (Website Payment System)' },
+      { icon: Send, text: 'Messenger မှတစ်ဆင့် ငွေပေးချေရန် ခေါ်ယူခြင်း (Messenger Payment)' },
+    ],
+    Icon: GraduationCap,
   },
 ];
 

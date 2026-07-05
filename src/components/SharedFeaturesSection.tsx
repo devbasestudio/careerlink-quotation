@@ -68,8 +68,8 @@ export function SharedFeaturesSection() {
       <div className="max-w-5xl mx-auto relative">
         <SectionHeader
           label="Included in All"
-          title="Website သုံးခုလုံးအတွက်"
-          subtitle="Website (၃) ခုစလုံးအတွက် အောက်ပါ အရည်အသွေးမြင့် စံချိန်စံညွှန်းများအတိုင်း တာဝန်ယူ တည်ဆောက်ပေးသွားမည် ဖြစ်သည်။"
+          title="Website အားလုံးအတွက်"
+          subtitle="Website (၄) ခုစလုံးအတွက် အောက်ပါ အရည်အသွေးမြင့် စံချိန်စံညွှန်းများအတိုင်း တာဝန်ယူ တည်ဆောက်ပေးသွားမည် ဖြစ်သည်။"
         />
 
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

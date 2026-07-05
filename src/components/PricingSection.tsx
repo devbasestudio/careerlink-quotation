@@ -6,7 +6,7 @@ export function PricingSection() {
   const [ref, isVisible] = useScrollReveal<HTMLDivElement>();
 
   const includedItems = [
-    'Website (၃) ခုလုံးအတွက် ရေးဆွဲတည်ဆောက်ပေးခြင်း',
+    'Website (၄) ခုလုံးအတွက် ရေးဆွဲတည်ဆောက်ပေးခြင်း',
     'လုပ်ငန်းသုံး Domain ချိတ်ဆက်မှုစနစ်များ စီစဉ်ပေးခြင်း',
     'Supabase Database & Backend စနစ် ပြင်ဆင်ပေးခြင်း',
     'HTTPS လုံခြုံရေးစနစ် (SSL Certificate) ပြင်ဆင်ပေးခြင်း',
@@ -22,7 +22,7 @@ export function PricingSection() {
         <SectionHeader
           label="Investment"
           title="Project ကုန်ကျစရိတ်"
-          subtitle="Website (၃) ခုစလုံးအတွက် အပြီးအစီး ကုန်ကျစရိတ်"
+          subtitle="Website (၄) ခုစလုံးအတွက် အပြီးအစီး ကုန်ကျစရိတ်"
         />
 
         <div

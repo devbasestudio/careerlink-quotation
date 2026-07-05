@@ -60,7 +60,7 @@ export function HeroSection() {
         >
           လုံခြုံစိတ်ချရမှု (Security)၊ မြန်ဆန်သွက်လက်မှု (Performance) အပြည့်အဝဖြင့် စနစ်တကျ အသုံးပြုနိုင်မည့်
           <br className="hidden md:block" />
-          Custom Website <span className="text-secondary font-medium">(၃) ခုအား</span> Professional စံချိန်စံညွှန်းများနှင့်အညီ တည်ဆောက်ပေးသွားမည် ဖြစ်ပါသည်။
+          Custom Website <span className="text-secondary font-medium">(၄) ခုအား</span> Professional စံချိန်စံညွှန်းများနှင့်အညီ တည်ဆောက်ပေးသွားမည် ဖြစ်ပါသည်။
         </p>
 
         {/* CTA buttons */}
@@ -95,7 +95,7 @@ export function HeroSection() {
           style={{ animationDelay: '400ms' }}
         >
           {[
-            { value: '3', label: 'Websites' },
+            { value: '4', label: 'Websites' },
             { value: '1 Week', label: 'Development' },
             { value: '15 Lakhs', label: 'Total Cost' },
           ].map((stat, i) => (
