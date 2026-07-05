@@ -96,7 +96,7 @@ export function HeroSection() {
         >
           {[
             { value: '4', label: 'Websites' },
-            { value: '1 Week', label: 'Development' },
+            { value: '2 Weeks', label: 'Development' },
             { value: '18 Lakhs', label: 'Total Cost' },
           ].map((stat, i) => (
             <div key={stat.label} className="text-center relative">

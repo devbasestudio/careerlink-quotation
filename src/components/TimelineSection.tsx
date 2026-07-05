@@ -15,7 +15,7 @@ const timelineSteps: TimelineStep[] = [
   {
     phase: '01',
     title: 'Development Phase',
-    duration: '1 Week (7 Days)',
+    duration: '2 Weeks (14 Days)',
     description:
       'Website (၄) ခုစလုံးကို Professional Standard နဲ့ Develop လုပ်ပြီး Sample Data တွေ ထည့်သွင်းပေးပါမယ်။',
     details: [
