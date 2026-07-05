@@ -1,5 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { SectionHeader } from './SectionHeader';
+import { ArrowRight, CircleDollarSign } from 'lucide-react';
 
 export function PaymentSection() {
   const [ref, isVisible] = useScrollReveal<HTMLDivElement>();
@@ -8,82 +9,95 @@ export function PaymentSection() {
     <section id="payment" className="py-24 md:py-32 px-6">
       <div className="max-w-4xl mx-auto">
         <SectionHeader
-          label="Payment"
-          title="ပေးချေမှု စည်းကမ်းချက်များ"
-          subtitle="ပေးချေမှုကို အဆင့် (၂) ဆင့်ဖြင့် ခွဲ၍ ပေးချေနိုင်ပါတယ်"
+          label="Payment Terms"
+          title="ပေးချေမှု အစီအစဉ်"
+          subtitle="Payment ကို Phase (2) ခု ခွဲပြီး ပေးချေနိုင်ပါတယ်"
         />
 
         <div
           ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 relative"
         >
+          {/* Arrow connector */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block">
+            <div className="w-10 h-10 rounded-full bg-primary border border-white/[0.06] flex items-center justify-center">
+              <ArrowRight className="w-4 h-4 text-white/30" />
+            </div>
+          </div>
+
           {/* First payment */}
           <div
-            className={`glass rounded-2xl p-8 md:p-10 text-center card-shine transition-all duration-500 hover:border-white/10 ${
+            className={`glass rounded-2xl p-8 md:p-10 text-center card-shine glass-hover ${
               isVisible ? 'animate-slide-left' : 'opacity-0'
             }`}
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/5 border border-white/10 mb-6">
-              <span className="font-heading text-xl font-bold text-secondary/70">
-                ၁
-              </span>
+            <div className="icon-container icon-container-lg mx-auto mb-6">
+              <CircleDollarSign className="w-6 h-6 text-white/40" />
             </div>
 
-            <h3 className="font-heading text-lg font-semibold text-secondary mb-2">
+            <span className="text-[10px] tracking-[0.25em] uppercase text-muted/40 font-medium">
+              First Installment
+            </span>
+
+            <h3 className="font-heading text-base font-semibold text-secondary mt-2 mb-6 mm-heading">
               ပထမ အရစ်
             </h3>
 
-            <div className="my-6">
-              <span className="font-heading text-5xl font-extrabold gradient-text">
-                ၅၀
+            <div className="mb-6">
+              <span className="font-heading text-5xl font-extrabold gradient-text-bright">
+                50
               </span>
-              <span className="text-2xl text-muted ml-1">%</span>
+              <span className="text-xl text-muted/40 ml-1 font-heading">%</span>
             </div>
 
-            <div className="divider max-w-16 mx-auto mb-6" />
+            <div className="divider max-w-12 mx-auto mb-6" />
 
-            <p className="text-muted/70 text-sm leading-relaxed">
-              ပရောဂျက် စတင်ဆောင်ရွက်ချိန်တွင်
-              <br />
-              <span className="text-secondary/60 font-medium">
-                ၇ သိန်း ၅ သောင်း
-              </span>{' '}
-              ပေးချေရပါမယ်
+            <p className="mm-text-sm text-muted/50">
+              Project စတင်ချိန်မှာ
+            </p>
+            <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
+              7.5 Lakhs
+            </p>
+            <p className="mm-text-sm text-muted/40 mt-1">
+              (၇ သိန်း ၅ သောင်း)
             </p>
           </div>
 
           {/* Second payment */}
           <div
-            className={`glass rounded-2xl p-8 md:p-10 text-center card-shine transition-all duration-500 hover:border-white/10 ${
+            className={`glass rounded-2xl p-8 md:p-10 text-center card-shine glass-hover ${
               isVisible ? 'animate-slide-right' : 'opacity-0'
             }`}
           >
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-white/5 border border-white/10 mb-6">
-              <span className="font-heading text-xl font-bold text-secondary/70">
-                ၂
-              </span>
+            <div className="icon-container icon-container-lg mx-auto mb-6">
+              <CircleDollarSign className="w-6 h-6 text-white/40" />
             </div>
 
-            <h3 className="font-heading text-lg font-semibold text-secondary mb-2">
+            <span className="text-[10px] tracking-[0.25em] uppercase text-muted/40 font-medium">
+              Final Installment
+            </span>
+
+            <h3 className="font-heading text-base font-semibold text-secondary mt-2 mb-6 mm-heading">
               ဒုတိယ အရစ်
             </h3>
 
-            <div className="my-6">
-              <span className="font-heading text-5xl font-extrabold gradient-text">
-                ၅၀
+            <div className="mb-6">
+              <span className="font-heading text-5xl font-extrabold gradient-text-bright">
+                50
               </span>
-              <span className="text-2xl text-muted ml-1">%</span>
+              <span className="text-xl text-muted/40 ml-1 font-heading">%</span>
             </div>
 
-            <div className="divider max-w-16 mx-auto mb-6" />
+            <div className="divider max-w-12 mx-auto mb-6" />
 
-            <p className="text-muted/70 text-sm leading-relaxed">
-              ပရောဂျက် အားလုံး ပြီးဆုံးသွားချိန်တွင်
-              <br />
-              <span className="text-secondary/60 font-medium">
-                ၇ သိန်း ၅ သောင်း
-              </span>{' '}
-              ပေးချေရပါမယ်
+            <p className="mm-text-sm text-muted/50">
+              Project အားလုံး Complete ဖြစ်ချိန်မှာ
+            </p>
+            <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
+              7.5 Lakhs
+            </p>
+            <p className="mm-text-sm text-muted/40 mt-1">
+              (၇ သိန်း ၅ သောင်း)
             </p>
           </div>
         </div>

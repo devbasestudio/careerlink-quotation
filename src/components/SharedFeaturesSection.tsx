@@ -1,42 +1,57 @@
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { SectionHeader } from './SectionHeader';
+import {
+  ShieldCheck,
+  Zap,
+  Smartphone,
+  Database,
+  Globe,
+  Rocket,
+  type LucideIcon,
+} from 'lucide-react';
 
-const sharedFeatures = [
+interface SharedFeature {
+  Icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+const sharedFeatures: SharedFeature[] = [
   {
-    icon: '🔒',
-    title: 'Security အပြည့်',
+    Icon: ShieldCheck,
+    title: 'Full Security',
     description:
-      'Authentication၊ Authorization၊ Data Encryption နှင့် Security Best Practices များဖြင့် လုံခြုံစိတ်ချစွာ အသုံးပြုနိုင်ပါတယ်',
+      'Authentication, Authorization, Data Encryption နဲ့ Security Best Practices တွေ အပြည့်အဝ ထည့်သွင်းပေးထားပါတယ်',
   },
   {
-    icon: '⚡',
-    title: 'Performance အပြည့်',
+    Icon: Zap,
+    title: 'High Performance',
     description:
-      'Optimized Loading Speed၊ Caching Strategy၊ Image Optimization နှင့် Code Splitting ဖြင့် မြန်ဆန်စွာ အလုပ်လုပ်ပါတယ်',
+      'Optimized Loading, Caching Strategy, Image Optimization နဲ့ Code Splitting ဖြင့် မြန်ဆန်စွာ Run ပါတယ်',
   },
   {
-    icon: '📱',
+    Icon: Smartphone,
     title: 'Responsive Design',
     description:
-      'Mobile Phone၊ Tablet နှင့် Desktop အားလုံးတွင် လှပစွာ ပြသနိုင်ရန် Responsive Design ဖြင့် တည်ဆောက်ထားပါတယ်',
+      'Phone, Tablet, Desktop အားလုံးမှာ ကောင်းမွန်စွာ Display ဖြစ်ဖို့ Responsive Design နဲ့ တည်ဆောက်ထားပါတယ်',
   },
   {
-    icon: '🗄️',
+    Icon: Database,
     title: 'Supabase Database',
     description:
-      'Supabase Database ကို Setup လုပ်ပေးပြီး Data Management အတွက် ပြည့်စုံစွာ စီစဉ်ပေးပါတယ်',
+      'Supabase Database ကို Setup လုပ်ပေးပြီး Data Management အတွက် Backend ပြည့်စုံစွာ စီစဉ်ပေးပါတယ်',
   },
   {
-    icon: '🌐',
-    title: 'Domain Setup',
+    Icon: Globe,
+    title: 'Domain & SSL Setup',
     description:
-      'Custom Domain များကို Setup လုပ်ပေးပြီး SSL Certificate ဖြင့် လုံခြုံစိတ်ချရပါတယ်',
+      'Custom Domain Setup လုပ်ပေးပြီး SSL Certificate ဖြင့် Secure Connection ရရှိစေပါတယ်',
   },
   {
-    icon: '🚀',
+    Icon: Rocket,
     title: 'Production-Ready',
     description:
-      'Data ထည့်ပြီးတဲ့အထိ လုံးဝ တန်းပြီး အသုံးပြုလို့ရတဲ့အထိ ကူညီပေးပါမယ်',
+      'Data ထည့်ပြီးတဲ့အထိ အသုံးပြုလို့ရတဲ့ Production-Ready State အထိ Support ပေးပါမယ်',
   },
 ];
 
@@ -44,42 +59,42 @@ export function SharedFeaturesSection() {
   const [ref, isVisible] = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="shared-features" className="py-24 md:py-32 px-6 relative">
-      {/* Background accent */}
+    <section id="shared-features" className="py-24 md:py-32 px-6 relative section-pattern">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/[0.05] to-transparent" />
       </div>
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto relative">
         <SectionHeader
           label="Included in All"
-          title="ဝဘ်ဆိုက် သုံးခုလုံးတွင် ပါဝင်မည့်"
-          subtitle="ဝဘ်ဆိုက်တိုင်းကို အောက်ပါ အရည်အသွေးစံနှုန်းများဖြင့် တည်ဆောက်ပေးပါမယ်"
+          title="Website သုံးခုလုံးအတွက်"
+          subtitle="Website တိုင်းကို အောက်ပါ Quality Standards တွေနဲ့ တည်ဆောက်ပေးပါမယ်"
         />
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sharedFeatures.map((feature, index) => (
-            <div
-              key={feature.title}
-              className={`glass rounded-2xl p-7 card-shine transition-all duration-500 hover:border-white/10 group ${
-                isVisible
-                  ? `animate-scale-in delay-${(index + 1) * 100}`
-                  : 'opacity-0'
-              }`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="text-3xl mb-4 transition-transform duration-500 group-hover:scale-110">
-                {feature.icon}
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {sharedFeatures.map((feature, index) => {
+            const { Icon } = feature;
+            return (
+              <div
+                key={feature.title}
+                className={`glass rounded-2xl p-7 card-shine glass-hover group ${
+                  isVisible ? 'animate-scale-in' : 'opacity-0'
+                }`}
+                style={{ animationDelay: `${index * 80}ms` }}
+              >
+                <div className="icon-container mb-5 group-hover:bg-white/[0.06]">
+                  <Icon className="w-5 h-5 text-white/40 transition-colors duration-400 group-hover:text-white/70" />
+                </div>
+                <h3 className="font-heading text-base font-semibold text-secondary mb-2.5 tracking-tight">
+                  {feature.title}
+                </h3>
+                <p className="mm-text-sm text-muted/50 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="font-heading text-lg font-semibold text-secondary mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-muted/70 text-sm leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
