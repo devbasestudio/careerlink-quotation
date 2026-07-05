@@ -54,14 +54,14 @@ export function PricingSection() {
             {/* Price */}
             <div className="mb-3">
               <span className="font-heading text-6xl md:text-8xl font-extrabold gradient-text-bright">
-                15
+                18
               </span>
               <span className="font-heading text-2xl md:text-3xl font-bold text-secondary/40 ml-2">
                 Lakhs
               </span>
             </div>
 
-            <p className="mm-text text-muted/50 text-base mb-12">မြန်မာကျပ် (၁,၅၀၀,၀၀၀ ကျပ်)</p>
+            <p className="mm-text text-muted/50 text-base mb-12">မြန်မာကျပ် (၁,၈၀၀,၀၀၀ ကျပ်)</p>
 
             <div className="divider max-w-40 mx-auto mb-12" />
 

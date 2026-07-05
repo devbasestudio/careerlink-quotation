@@ -56,10 +56,10 @@ export function PaymentSection() {
               Project စတင်ချိန်မှာ
             </p>
             <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
-              7.5 Lakhs
+              9 Lakhs
             </p>
             <p className="mm-text-sm text-muted/40 mt-1">
-              (၇ သိန်း ၅ သောင်း)
+              (၉ သိန်း)
             </p>
           </div>
 
@@ -94,10 +94,10 @@ export function PaymentSection() {
               Project အားလုံး Complete ဖြစ်ချိန်မှာ
             </p>
             <p className="font-heading text-lg text-secondary/70 font-semibold mt-2">
-              7.5 Lakhs
+              9 Lakhs
             </p>
             <p className="mm-text-sm text-muted/40 mt-1">
-              (၇ သိန်း ၅ သောင်း)
+              (၉ သိန်း)
             </p>
           </div>
         </div>
